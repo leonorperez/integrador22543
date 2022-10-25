@@ -68,4 +68,15 @@
     margin-right: 30rem;
     color: white;
 }
+.card-body{
+    border: solid 1px blue;
+}
+.card-body:hover{
+    border: solid 1px yellow;
+}
+.botones{
+    display: inline-flex;
+    margin-top: 28px;
+    
+}
     
