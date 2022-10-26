@@ -42,7 +42,7 @@
 
         <ul class="nav justify-content-end" style="margin-right: 4%">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page">La Conferencia</a>
+            <a class="nav-link" aria-current="page" href="index.html">La Conferencia</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#oradores">Los Oradores</a>
@@ -69,7 +69,7 @@
       <div class="container">
         <div class="d-flex justify-content-around flex-sm-wrap mt-5">
           <div class="card text-center" style="width: 18rem">
-            <div class="card-body">
+            <div class="card-body2">
               <h5 class="card-title">Estudiante</h5>
               <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
               <p class="card-text mt-4"><strong>80%</strong></p>
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="card text-center" style="width: 18rem">
-            <div class="card-body">
+            <div class="card-body2">
               <h5 class="card-title">Trainee</h5>
               <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
               <p class="card-text mt-4"><strong>50%</strong></p>
@@ -87,7 +87,7 @@
             </div>
           </div>
           <div class="card text-center" style="width: 18rem">
-            <div class="card-body">
+            <div class="card-body2">
               <h5 class="card-title">Junior</h5>
               <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
               <p class="card-text mt-4"><strong>15%</strong></p>
@@ -142,8 +142,9 @@
                   id="cant"
                   class="form-control"
                   placeholder="Cantidad"
-                  onchange="calcTotal()"
-                  onkeyup="calcTotal()"
+                  min="0"
+                 
+                  
                 />
               </div>
               <div class="col-md mb-3">
@@ -151,7 +152,7 @@
                   name=""
                   id="categoria"
                   class="form-select"
-                  onchange="calcTotal()"
+                 
                 >
                   <option value="1">Estudiante</option>
                   <option value="2">Trainee</option>
@@ -171,12 +172,12 @@
 
               <div class="botones">
                 <div class="col-md mb-2">
-                  <button type="button" onclick="borrar()" id="borrar"class="btn btn-success btn-lg mr-1" style="width: 100%;">
+                  <button type="button" onclick="limpiar()" id="borrar"class="btn btn-success btn-lg mr-1" style="width: 100%;">
                     Borrar
                   </button>
                 </div>
                 <div class="col-md mb-2">
-                  <button type="button" id="resumen"class="btn btn-success btn-lg ml-1" style="width: 95%;">
+                  <button type="button"  onclick="calcTotal()"   id="resumen"class="btn btn-success btn-lg ml-1" style="width: 95%;">
                     Resumen
                   </button>
                 </div>

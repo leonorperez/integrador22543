@@ -68,10 +68,11 @@
     margin-right: 30rem;
     color: white;
 }
-.card-body{
+.card-body2{
     border: solid 1px blue;
+    padding-top: 7%;
 }
-.card-body:hover{
+.card-body2:hover{
     border: solid 1px yellow;
 }
 .botones{

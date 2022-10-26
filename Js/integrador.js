@@ -16,15 +16,18 @@ function calcTotal() {
     } else {
         total=cant*valorTicket*.85 //15%
     }
-
     document.getElementById("total").innerHTML=`Total a Pagar: $${total}`
+    
 }
 
-function borrar(){
-    document.getElementById("cant").value = ""
-    
-    document.getElementById("categoria").value =""
 
+function limpiar(){
+
+    document.getElementById("nombre").value = ""
+    document.getElementById("apellido").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("cant").value = ""    
+    document.getElementById("categoria").value =""
     document.getElementById("total").innerHTML=" "
 }
 
